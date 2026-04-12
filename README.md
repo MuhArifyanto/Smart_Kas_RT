@@ -1,59 +1,109 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Smart Kas RT 🏘️
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Smart Kas RT adalah sebuah sistem informasi berbasis web yang dirancang khusus untuk mempermudah pengelolaan keuangan dan iuran di tingkat Rukun Tetangga (RT). Aplikasi ini menyediakan transparansi keuangan kepada warga sekaligus mempermudah pengurus RT dalam mencatat pemasukan, pengeluaran, serta memberikan pengumuman dan pesan secara terpusat.
 
-## About Laravel
+## ✨ Fitur Utama
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi ini memiliki 2 hak akses atau peran (Role), yaitu **Admin (Pengurus RT)** dan **Warga**:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 👨‍💼 Admin (Pengurus RT)
+* **Dashboard Kas:** Melihat ringkasan total saldo kas, pemasukan, dan pengeluaran.
+* **Manajemen Warga:** Menambah, mengedit, dan menghapus data warga.
+* **Manajemen Iuran & Pemasukan:** Mencatat, memvalidasi bukti pembayaran, dan mencetak kwitansi/laporan keuangan bulanan.
+* **Manajemen Pengeluaran:** Mencatat setiap pengeluaran atau alokasi dana operasional RT.
+* **Sistem Chat/Broadcast:** Berkomunikasi secara real-time dengan seluruh warga atau memberikan pengumuman penting (Notifikasi/Reminder).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👥 Warga
+* **Dashboard Personal:** Laporan histori pembayaran sendiri dan transparansi total Kas RT.
+* **Pembayaran Iuran:** Mengunggah bukti pembayaran iuran bulanan untuk divalidasi oleh pengurus.
+* **Fitur Chat:** Menghubungi pengurus RT melalui fitur pesan (chatting) langsung dari dalam aplikasi.
+* **Profil Diri:** Manajemen data diri (Profil & Avatar/Foto Warga).
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🛠️ Teknologi yang Digunakan
+* **Framework:** [Laravel](https://laravel.com/) (PHP)
+* **Frontend:** Blade, CSS (TailwindCSS/Bootstrap), JavaScript (Ajax Ppolling)
+* **Database:** MySQL
+* **Lainnya:** File Storage untuk manajemen foto profil & bukti pembayaran iuran.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🏗️ Cara Instalasi (Local Development)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi di lingkungan server lokal Anda.
 
-### Premium Partners
+### 1. Prasyarat Sistem
+Pastikan komputer/server Anda telah meng-install:
+* PHP (Versi 8.1 ke atas disarankan)
+* Composer
+* Node.js & npm
+* MySQL / XAMPP / Laragon
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 2. Langkah-langkah Instalasi
 
-## Contributing
+1. **Clone repository ini**
+   ```bash
+   git clone https://github.com/UsernameAnda/smart-kas-rt.git
+   cd smart-kas-rt
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Install komponen PHP via Composer**
+   ```bash
+   composer install
+   ```
 
-## Code of Conduct
+3. **Install komponen Frontend (Tailwind/Vite)**
+   ```bash
+   npm install
+   npm run build
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Kopi & Atur Konfigurasi Environment**
+   ```bash
+   cp .env.example .env
+   ```
+   *Buka file `.env` lalu sesuaikan konfigurasi database Anda:*
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=nama_database_anda
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
-## Security Vulnerabilities
+5. **Generate Application Key**
+   ```bash
+   php artisan key:generate
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. **Migrasi Database & Seeding (Data Contoh)**
+   ```bash
+   php artisan migrate:fresh --seed
+   ```
 
-## License
+7. **Tautkan Storage (Untuk Upload Gambar)**
+   ```bash
+   php artisan storage:link
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8. **Jalankan Aplikasi**
+   ```bash
+   php artisan serve
+   ```
+   Buka browser Anda dan akses: `http://localhost:8000`
+
+---
+
+## 📸 Tampilan Aplikasi (Screenshots)
+*(Tambahkan gambar screenshot aplikasi Anda di sini setelah di-upload ke GitHub)*
+
+| Dashboard Admin | Halaman Pembayaran Warga |
+| :---: | :---: |
+| `![Dashboard](link-gambar.png)` | `![Pembayaran](link-gambar-pembayaran.png)` |
+
+---
+
+## 📄 Lisensi
+Project ini bersifat *open-source* dan didistribusikan di bawah Lisensi [MIT](https://opensource.org/licenses/MIT).
