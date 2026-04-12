@@ -102,7 +102,8 @@ Pastikan komputer/server Anda telah meng-install:
 | Dashboard Admin | Halaman Pembayaran Warga |
 | :---: | :---: |
 | `<img width="1366" height="598" alt="{B7D6E94B-D5DC-4970-BF09-F01E153C5BD9}" src="https://github.com/user-attachments/assets/a2780b02-c86b-4c4d-aff0-515c94296ed5" />
-` | `![Pembayaran](link-gambar-pembayaran.png)` |
+` | `<img width="1366" height="599" alt="{7E3DF00D-3918-49D3-A19A-7D16F5C505BE}" src="https://github.com/user-attachments/assets/8a5c00cf-0dc0-427a-acf6-0b4d21c75316" />
+` |
 
 ---
 
