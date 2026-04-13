@@ -14,7 +14,7 @@
 |----|--------------------------|----------------------|
 | 1  | Bayu Aji Yuwono          | UI/UX (Mockup)       |
 | 2  | Muhammad Arif Mulyanto   | Fullstack Developer  |
-| 3  | Lutpiah Ainus Shiddik    | Laporan & UI/UX (Mockup) |
+| 3  | Lutpiah Ainus Shiddik    | Laporan              |
 
 # Smart Kas RT 🏘️
 
