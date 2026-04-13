@@ -114,7 +114,7 @@ Pastikan komputer/server Anda telah meng-install:
 
 ---
 
-## 📸 Tampilan Aplikasi
+### 📸 Tampilan Aplikasi
 
 | Dashboard Admin | Halaman Pembayaran Warga |
 | :-------------: | :----------------------: |
@@ -122,5 +122,5 @@ Pastikan komputer/server Anda telah meng-install:
 
 ---
 
-## 📄 Lisensi
+### 📄 Lisensi
 Project ini bersifat *open-source* dan didistribusikan di bawah Lisensi [MIT](https://opensource.org/licenses/MIT).
