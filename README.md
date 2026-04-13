@@ -8,11 +8,13 @@
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
 </p>
 
-| No | Nama         | Role    |
-| -- | ------------ | ---------- |
-| 1  | BAYU AJI YUWONO | Mock UP  |
-| 2  | MUHAMMAD ARIF MULYANTO | FrondEnd-BackEnd  |
-| 3  | LUTPIAH AINUS SHIDDIK | Mock UP-Laporan |
+## 👥 Tim Pengembang
+
+| No | Nama                     | Role                 |
+|----|--------------------------|----------------------|
+| 1  | Bayu Aji Yuwono          | UI/UX (Mockup)       |
+| 2  | Muhammad Arif Mulyanto   | Fullstack Developer  |
+| 3  | Lutpiah Ainus Shiddik    | Laporan & UI/UX (Mockup) |
 
 # Smart Kas RT 🏘️
 
