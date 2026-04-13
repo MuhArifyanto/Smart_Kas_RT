@@ -1,3 +1,19 @@
+<p align="left">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+</p>
+
+| No | Nama         | Role    |
+| -- | ------------ | ---------- |
+| 1  | BAYU AJI YUWONO | Mock UP  |
+| 2  | MUHAMMAD ARIF MULYANTO | FrondEnd-BackEnd  |
+| 3  | LUTPIAH AINUS SHIDDIK | Mock UP-Laporan |
+
 # Smart Kas RT 🏘️
 
 Smart Kas RT adalah sebuah sistem informasi berbasis web yang dirancang khusus untuk mempermudah pengelolaan keuangan dan iuran di tingkat Rukun Tetangga (RT). Aplikasi ini menyediakan transparansi keuangan kepada warga sekaligus mempermudah pengurus RT dalam mencatat pemasukan, pengeluaran, serta memberikan pengumuman dan pesan secara terpusat.
